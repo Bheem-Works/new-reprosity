@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .h2 {
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 20px;
+        text-align: center;
+        background-color: lightblue;
+        color: black;
+        border-radius: 8px;
+        display: inline-block;
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for both */
+      }
+
+      .h2:hover {
+        background-color: rgb(231, 72, 231); /* Change background color */
+        transform: scale(1.1); /* Slightly enlarge the element */
+      }
+    </style>
+  </head>
+  
+  <p id="demo"></p>
+  <button onclick="document.getElementById('demo').innerHTML=Date();">
+    show date
+  </button>
+
+  <body>
+    <script src="day1.js"></script>
+    <script src="day2.js"></script>
+    <script src="day3.js"></script>
+
+    <h1>Welcome</h1>
+
+    <label>username:</label>
+    <input id="myText"> <br> <br>
+    <button id="mySubmit">submit</button> 
+    <script>
+      let username;
+      doucment.getElementById("mySubmit").onclick = function () {
+        username = document.getElementById("myText").value;
+        console.log(username);
+      }
+    </script>
+  </body>
+</html>
